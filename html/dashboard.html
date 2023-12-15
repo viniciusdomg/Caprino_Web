@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/dashboard.css"> <!-- Lembre-se de ajustar o caminho do seu arquivo CSS -->
+</head>
+<body>
+
+    <header id = "header">
+        <h1 class="dash">Bem Caprino</h1>
+        <img src="..\Assets\sair.png" alt="sair">
+        </a>
+    </header>
+
+<section id="informacoes">
+    <div class="totalAnimal" onclick="mudarTela('animaisTotal.html')">
+        <h2 class="nomeCadastrados">Total de Animais Cadastrados </h2>
+        <p>Os animais cadastrados são monitorados de forma adequada, 
+            seja para fins de cuidado, criação, conservação ou pesquisa.</p>
+            <span id="total-animais">100</span>
+    </div>
+    <div class="totalDoentes" onclick="mudarTela('animaisDoente.html')">
+        <h2 class="nomeDoentes">Total de Animais Doentes </h2>
+        <p>Os animais nesse estado se encontram em acompanhamento 
+            devido ao estado gestacional</p>
+             <span id="total-doentes">100</span>
+    </div>
+    <div class="totalGestante" onclick="mudarTela('animaisGest.html')">
+        <h2 class="nomeGestante">Total de Animais Gestantes </h2>
+        <p>Os animais nesse estado se encontram 
+            em observação e tratamento </p>
+            <span id="total-gestantes">50</span>
+    </div>
+</section>
+
+<script src="../js/dashboard.js"></script>
+</body>
+</html>
