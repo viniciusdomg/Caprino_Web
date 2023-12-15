@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/registroAnimal.css">
+</head>
+<body>
+    <header>
+        <h1 id="tituloBemCaprino" class="dash">Bem Caprino</h1>
+        <a href="../html/login.html">
+            <img src="..\Assets\sair.png" alt="sair">
+        </a>
+    </header>
+    <div id="container">
+        <a href="../html/animaisTotal.html">
+            <img src="..\Assets\back.png" alt="voltar">
+        </a>
+        <form id="registroAnm" action="">
+            <label class="picture" for="pictureAnimal">
+                <span class="picture_text" id="picture_text"></span>
+            </label>
+            <input type="file" name="pictureAnimal" id="pictureAnimal">
+            <br>
+            <input id="idAnimal" type="number" placeholder="ID Animal" required>
+            <input id="idade" type="number" step="0.01" placeholder="Idade" required>
+            <br>
+            <select id="Raca" name="raca" required>
+                <option value="" disabled selected hidden>Escolha a Raça</option>
+                <option value="ovelha">Ovelha</option>
+                <option value="cabrino">Cabrino</option>
+            </select>
+            <br>
+            <select id="genero" name="genero" required>
+               <option value="" disabled selected hidden>Escolha o Gênero</option>
+                <option value="masculino">Macho</option>
+                <option value="feminino">Fêmea</option>
+            </select>
+            <br>
+            <br>
+            <input id="peso" type="number" step="0.01" placeholder="Peso" required>
+            <input id="tipoSanguineo" type="text" placeholder="Tipo Sanguíneo" required>
+            <br>
+            <div class="checkbox-group">
+                <input type="checkbox" id="doente" value="Doente"> 
+                <label for="doente">Doente</label>
+                <div id="descricaoDoente"></div>
+              </div>
+            
+              <div class="checkbox-group">
+                <input type="checkbox" id="gestante" value="Gestante"> 
+                <label for="gestante">Gestante</label>
+                <div id="descricaoGest"></div>    
+            </div>
+            <br>
+            <button type="submit" value="envio">Cadastrar</button>
+        </form>        
+    </div>
+    <script type="module" src="../js/registroAnimal.js"></script>
+</body>
+</html>

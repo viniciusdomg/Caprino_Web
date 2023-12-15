@@ -1,0 +1,256 @@
+body, h1, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #6b6c6d31;
+}
+
+header {
+    background-color: #ffffff;
+    color: #0e0d0d;
+    padding: 15px;
+    text-align: center;
+}
+
+header h1 {
+    margin-top: 10px;
+    font-size: 50px;
+    display: inline-block;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    user-select: none;
+}
+header h1:hover {
+    cursor: pointer;
+    text-shadow: 0 0 10px rgba(133, 132, 132, 0.8); 
+}
+
+header img {
+    margin-right: -750px; 
+    margin-left: 750px; 
+    width: 24px;
+    height: 24px;
+}
+
+#container {
+    justify-content: center;
+    display: flex;
+    align-items: center; /* Adicionado para centralizar verticalmente */
+    position: relative;
+    background-color: #fff;
+    padding: 40px; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 35em;
+    height: 46em;
+    margin-top: 25px;
+    margin-left: 620px;
+}
+
+div img {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 750px;
+    margin-left: -40px;
+    cursor: pointer;
+}
+
+form {
+    margin-top: 250px;
+}
+
+#tipo {
+    padding-right: 300px;
+}
+
+input {
+    margin-bottom: 15px;
+}
+#idAnimal, #idade {
+    padding: 10px;
+    padding-right: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    outline: none;
+}
+
+#idAnimal:hover,
+#idAnimal:focus,
+#idade:hover,
+#idade:focus {
+    border-color: #4caf50;
+}
+
+
+#idAnimal {
+    margin-right: 30px;
+}
+
+
+input::-webkit-inner-spin-button {
+    margin-right: -290px; 
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    padding-right: 40px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    outline: none;
+}
+
+#peso, #tipoSanguineo {
+    padding: 10px;
+    padding-right: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    outline: none;
+}
+
+#peso:hover,
+#peso:focus,
+#tipoSanguineo:hover,
+#tipoSanguineo:focus {
+    border-color: #4caf50;
+}
+
+#peso {
+    margin-right: 30px;
+}
+
+.checkbox-group {
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+
+  .checkbox-group input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 2px solid #e4e4e4;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-top: -2px;
+    cursor: pointer;
+  }
+
+  .checkbox-group input:checked {
+    background-color: #4caf50;
+  }
+
+  .checkbox-group label {
+    font-size: 17px;
+    cursor: pointer;
+  }
+
+button {
+    font-size: 20px;
+    padding: 12px 220px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+#pictureAnimal{
+    display: none;
+}
+
+.picture{
+    max-width: 100%;
+    width: 525px;
+    height: 220px;
+    margin-top: -250px;
+    margin-bottom: 20px;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    border: 2px dashed #aaa;
+    cursor: pointer;
+    transition: color 300ms ease-in-out, background 300ms ease-in-out;
+}
+
+.picture:hover{
+    color: #777;
+    background: #ccc;
+}
+
+.picture:active{
+    color: #4caf50;
+    border-color: #4caf50;
+    background: #ddd;
+    box-shadow: 0 0 10px #4caf50;
+}
+
+.picture_img{
+    width: 530px;
+    height: 224px;
+    margin-bottom: -4px;
+    margin-left: 2px;
+}
+
+.estilo {
+    padding: 5px; 
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    font-size: 14px; 
+    outline: none; 
+    transition: border-color 0.3s ease; 
+    width: 50%;
+}
+
+.estilo:focus {
+    border-color: #4caf50;
+}
+
+#descricaoDoente {
+    display:flex; 
+
+}
+
+.dataDescoberta {
+    padding: 5px; 
+    padding-left: 60px;
+    margin-left: 50px;
+    margin-right: 5px;
+    margin-top: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    font-size: 14px; 
+    outline: none; 
+    transition: border-color 0.3s ease; 
+    width: 50%;
+}
+
+#descricaoGest:focus {
+    border-color: #4caf50;
+}
+
+
+
+
+ 

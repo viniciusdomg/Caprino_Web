@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+}
+
+#erro {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background-color: rgba(201, 8, 8, 0.897);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+
+#cadastro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#cadastro {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#cadastro img {
+  width: 220px;
+  height: 200px;
+  padding-top: 20px;
+  margin-left: 25px;
+}
+
+#cadastro h1 {
+  font-size: 35px;
+  margin-top: 10px;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 20px;
+}
+
+#cadastro h2  {
+  font-size: 24px;
+  margin-top: 10px;
+  color: #333;
+  padding-top: 10px;
+}
+
+#Esqueceu {
+  padding: 10px;
+  padding-left: 14rem;
+  color: #45a049;
+  font-size: 14px;
+}
+
+
+#cadastro button {
+  font-size: 20px;
+  padding: 12px 150px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#cadastro button:hover {
+  background-color: #45a049;
+}
+
+input {
+  width: 20%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  border-radius: 0;
+  box-sizing: border-box;
+}
+
+  a {
+    padding: 10px;
+    color: #45a049;
+    font-size: 17px;
+    border: none;
+    text-decoration: none;
+  }
+
+  #ou {
+    display: flex;
+    align-items: center;
+    color: #888;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  #ou::before,
+  #ou::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #888;
+    margin: 0 10px; 
+  }
+
+@media screen and (max-width: 600px){
+  #form img {
+    width: 200px;
+    height: 120px;
+    padding-top: 15px;
+  }
+  input {
+    width: 90%;
+  }
+}
